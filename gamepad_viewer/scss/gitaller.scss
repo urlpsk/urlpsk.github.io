@@ -1,0 +1,186 @@
+$red: #ff8888;
+$green: #88ff88;
+$blue: #8888ff;
+$yellow: #ffff88;
+$purple: #ff88ff;
+
+$button-height: 15px;
+$button-width: 45px;
+
+$pick-height: 15px;
+$pick-width: 245px;
+
+$wailing-height: 20px;
+$wailing-width: 20px;
+
+#gamepads{
+    .controller{
+        background-image: none;
+        width: 350px;
+        height: 100px;
+        .abxy{
+            position: absolute;
+            width: 300px;
+            height: 80px;
+            top: 10px;
+            left: 10px;
+            .button{
+                position: absolute;
+                background-image: none;
+                top: 0;
+                height: $button-height;
+                width: $button-width;
+                border: #ffffff 2px solid;
+                border-radius: 2px;
+                background-color: transparent;
+
+                &.pressed{
+                    margin-top: 0;
+                }
+
+                //red
+                &.a{
+                    left: 0;
+                    border-color: $red;
+                    &.pressed{
+                        background-color: $red;
+                    }
+                }
+                //green
+                &.b{
+                    left: 50px;
+                    border-color: $green;
+                    &.pressed{
+                        background-color: $green;
+                    }
+                }
+                //blue
+                &.x{
+                    left: 100px;
+                    border-color: $blue;
+                    &.pressed{
+                        background-color: $blue;
+                    }
+                }
+                //yellow
+                &.y{
+                    left: 150px;
+                    border-color: $yellow;
+                    &.pressed{
+                        background-color: $yellow;
+                    }
+                }
+            }
+        }
+        .bumpers{
+            position: absolute;
+            width: 300px;
+            height: 80px;
+            top: 10px;
+            left: 10px;
+            .bumper{
+                position: absolute;
+                background-image: none;
+                opacity: 1;
+                border: #ffffff 2px solid;
+                border-radius: 2px;
+                background-color: transparent;
+
+                //purple
+                &.left{
+                    top: 0;
+                    height: $button-height;
+                    width: $button-width;
+                    left: 200px;
+                    border-color: $purple;
+                    &.pressed{
+                        background-color: $purple;
+                    }
+                }
+                //up pick
+                &.right{
+                    opacity: 1;
+                    left: 0;
+                    top: 30px;
+                    height: $pick-height;
+                    width: $pick-width;
+                    &.pressed{
+                        background-color: white;
+                    }
+                }
+            }
+        }
+        .triggers{
+            position: absolute;
+            width: 300px;
+            height: 80px;
+            top: 10px;
+            left: 10px;
+            .trigger{
+                display: none;
+            }
+            .trigger-button{
+                position: absolute;
+                background-image: none;
+                opacity: 1;
+                height: $pick-height;
+                width: $pick-width;
+                border: #ffffff 2px solid;
+                border-radius: 2px;
+                background-color: transparent;
+                //down pick
+                &.left{
+                    opacity: 1;
+                    top: 47px;
+                    left: 0;
+                    &.pressed{
+                        background-color: white;
+                    }
+                }
+                &.right{
+                    display: none;
+                }
+            }
+        }
+        .sticks{
+            position: absolute;
+            width: 300px;
+            height: 80px;
+            top: 10px;
+            left: 10px;
+            .stick{
+                position: absolute;
+                background-image: none;
+                opacity: 1;
+                height: $wailing-height;
+                width: $wailing-width;
+                left: 255px;
+                font-size: 40px;
+
+                //wailing up
+                &.left{
+                    color: $green;
+                    top: -10px;
+                    &.pressed{
+                        &:before{
+                            content: "⬆";
+                        }
+                    }
+                }
+                //wailing down
+                &.right{
+                    color: blue;
+                    top: 30px;
+                    &.pressed{
+                        &:before{
+                            content: "⬇";
+                        }
+                    }
+                }
+            }
+        }
+        .arrows, .touchpad, .quadrant, .wheels, .dpad, .fstick{
+            display: none;
+        }
+    }
+}
