@@ -4,42 +4,48 @@ $blue: #8888ff;
 $yellow: #ffff88;
 $purple: #ff88ff;
 
-$width: 240px;
-$height: 58px;
+$width: 480px;
+$height: 112px;
 
-$button-height: 12px;
-$button-width: 34px;
-$button-border: 2px;
-$button-margin: 1px;
+$top: 10px;
+$left: 10px;
 
-$pick-height: 10px;
-$pick-width: 190px;
+$button-height: 24px;
+$button-width: 68px;
+$button-border: 4px;
+$button-margin: 2px;
 
-$wailing-height: 38px;
-$wailing-width: 27px;
+$pick-height: 20px;
+$pick-width: 380px;
+
+$wailing-height: 76px;
+$wailing-width: 54px;
+
+$border-width: 4px;
+$border-radius: $border-width;
 
 #gamepads{
     .controller{
         background-image: none;
         background-color: rgba(0,0,0,0.8);
 
-        border-radius: 5px;
+        border-radius: 10px;
         width: $width;
         height: $height;
         .abxy{
             position: absolute;
             width: $width;
             height: $height;
-            top: 5px;
-            left: 5px;
+            top: $top;
+            left: $left;
             .button{
                 position: absolute;
                 background-image: none;
                 top: 0;
                 height: $button-height;
                 width: $button-width;
-                border: #ffffff 2px solid;
-                border-radius: 2px;
+                border: #ffffff $border-width solid;
+                border-radius: $border-radius;
                 background-color: transparent;
 
                 &.pressed{
@@ -84,14 +90,14 @@ $wailing-width: 27px;
             position: absolute;
             width: $width;
             height: $height;
-            top: 5px;
-            left: 5px;
+            top: $top;
+            left: $left;
             .bumper{
                 position: absolute;
                 background-image: none;
                 opacity: 1;
-                border: #ffffff 2px solid;
-                border-radius: 2px;
+                border: #ffffff $border-width solid;
+                border-radius: $border-radius;
                 background-color: transparent;
 
                 //purple
@@ -109,7 +115,7 @@ $wailing-width: 27px;
                 &.right{
                     opacity: 1;
                     left: 0;
-                    top: 21px;
+                    top: 42px;
                     height: $pick-height;
                     width: $pick-width;
                     &.pressed{
@@ -122,8 +128,8 @@ $wailing-width: 27px;
             position: absolute;
             width: $width;
             height: $height;
-            top: 5px;
-            left: 5px;
+            top: $top;
+            left: $left;
             .trigger{
                 display: none;
             }
@@ -133,13 +139,13 @@ $wailing-width: 27px;
                 opacity: 1;
                 height: $pick-height;
                 width: $pick-width;
-                border: #ffffff 2px solid;
-                border-radius: 2px;
+                border: #ffffff $border-width solid;
+                border-radius: 0 0 $border-radius $border-radius;
                 background-color: transparent;
                 //down pick
                 &.left{
                     opacity: 1;
-                    top: 33px;
+                    top: 66px;
                     left: 0;
                     &.pressed{
                         background-color: white;
@@ -154,8 +160,8 @@ $wailing-width: 27px;
             position: absolute;
             width: $width;
             height: $height;
-            top: 5px;
-            left: 5px;
+            top: $top;
+            left: $left;
             .stick{
                 position: absolute;
                 background-image: none;
@@ -163,11 +169,11 @@ $wailing-width: 27px;
                 opacity: 1;
                 height: $wailing-height;
                 width: $wailing-width;
-                left: 202px;
+                left: 404px;
 
                 //wailing up
                 &.left{
-                    top: -1px;
+                    top: -2px;
                     display: block;
                     &.pressed{
                         background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2337b823%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%201.85%2049.44%2025.86%2049.44%2048.85%2035.44%2034.85%2035.44%2069.86%2015.44%2069.86%2015.44%2034.85%201.52%2048.85%201.52%2025.86%2025.43%201.85%22%2F%3E%3C%2Fsvg%3E');
@@ -176,7 +182,7 @@ $wailing-width: 27px;
                 //wailing down
                 &.right{
                     display: block;
-                    top: 10px;
+                    top: 20px;
                     &.pressed{
                         background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%234b8fff%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%2069.86%2049.44%2045.85%2049.44%2022.86%2035.44%2036.85%2035.44%201.85%2015.44%201.85%2015.44%2036.85%201.52%2022.86%201.52%2045.85%2025.43%2069.86%22%2F%3E%3C%2Fsvg%3E');
                     }

@@ -1,27 +1,27 @@
 #gamepads .controller {
   background-image: none;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-  width: 240px;
-  height: 58px;
+  border-radius: 10px;
+  width: 480px;
+  height: 112px;
 }
 
 #gamepads .controller .abxy {
   position: absolute;
-  width: 240px;
-  height: 58px;
-  top: 5px;
-  left: 5px;
+  width: 480px;
+  height: 112px;
+  top: 10px;
+  left: 10px;
 }
 
 #gamepads .controller .abxy .button {
   position: absolute;
   background-image: none;
   top: 0;
-  height: 12px;
-  width: 34px;
-  border: #ffffff 2px solid;
-  border-radius: 2px;
+  height: 24px;
+  width: 68px;
+  border: #ffffff 4px solid;
+  border-radius: 4px;
   background-color: transparent;
 }
 
@@ -39,7 +39,7 @@
 }
 
 #gamepads .controller .abxy .button.b {
-  left: calc( ( 34px + 2px * 2 + 1px ) * 1);
+  left: calc( ( 68px + 4px * 2 + 2px ) * 1);
   border-color: #88ff88;
 }
 
@@ -48,7 +48,7 @@
 }
 
 #gamepads .controller .abxy .button.x {
-  left: calc( ( 34px + 2px * 2 + 1px ) * 2);
+  left: calc( ( 68px + 4px * 2 + 2px ) * 2);
   border-color: #8888ff;
 }
 
@@ -57,7 +57,7 @@
 }
 
 #gamepads .controller .abxy .button.y {
-  left: calc( ( 34px + 2px * 2 + 1px ) * 3);
+  left: calc( ( 68px + 4px * 2 + 2px ) * 3);
   border-color: #ffff88;
 }
 
@@ -67,26 +67,26 @@
 
 #gamepads .controller .bumpers {
   position: absolute;
-  width: 240px;
-  height: 58px;
-  top: 5px;
-  left: 5px;
+  width: 480px;
+  height: 112px;
+  top: 10px;
+  left: 10px;
 }
 
 #gamepads .controller .bumpers .bumper {
   position: absolute;
   background-image: none;
   opacity: 1;
-  border: #ffffff 2px solid;
-  border-radius: 2px;
+  border: #ffffff 4px solid;
+  border-radius: 4px;
   background-color: transparent;
 }
 
 #gamepads .controller .bumpers .bumper.left {
   top: 0;
-  height: 12px;
-  width: 34px;
-  left: calc( ( 34px + 2px * 2 + 1px ) * 4);
+  height: 24px;
+  width: 68px;
+  left: calc( ( 68px + 4px * 2 + 2px ) * 4);
   border-color: #ff88ff;
 }
 
@@ -97,9 +97,9 @@
 #gamepads .controller .bumpers .bumper.right {
   opacity: 1;
   left: 0;
-  top: 21px;
-  height: 10px;
-  width: 190px;
+  top: 42px;
+  height: 20px;
+  width: 380px;
 }
 
 #gamepads .controller .bumpers .bumper.right.pressed {
@@ -108,10 +108,10 @@
 
 #gamepads .controller .triggers {
   position: absolute;
-  width: 240px;
-  height: 58px;
-  top: 5px;
-  left: 5px;
+  width: 480px;
+  height: 112px;
+  top: 10px;
+  left: 10px;
 }
 
 #gamepads .controller .triggers .trigger {
@@ -122,16 +122,16 @@
   position: absolute;
   background-image: none;
   opacity: 1;
-  height: 10px;
-  width: 190px;
-  border: #ffffff 2px solid;
-  border-radius: 2px;
+  height: 20px;
+  width: 380px;
+  border: #ffffff 4px solid;
+  border-radius: 0 0 4px 4px;
   background-color: transparent;
 }
 
 #gamepads .controller .triggers .trigger-button.left {
   opacity: 1;
-  top: 33px;
+  top: 66px;
   left: 0;
 }
 
@@ -145,10 +145,10 @@
 
 #gamepads .controller .sticks {
   position: absolute;
-  width: 240px;
-  height: 58px;
-  top: 5px;
-  left: 5px;
+  width: 480px;
+  height: 112px;
+  top: 10px;
+  left: 10px;
 }
 
 #gamepads .controller .sticks .stick {
@@ -156,13 +156,13 @@
   background-image: none;
   background-repeat: no-repeat;
   opacity: 1;
-  height: 38px;
-  width: 27px;
-  left: 202px;
+  height: 76px;
+  width: 54px;
+  left: 404px;
 }
 
 #gamepads .controller .sticks .stick.left {
-  top: -1px;
+  top: -2px;
   display: block;
 }
 
@@ -172,7 +172,7 @@
 
 #gamepads .controller .sticks .stick.right {
   display: block;
-  top: 10px;
+  top: 20px;
 }
 
 #gamepads .controller .sticks .stick.right.pressed {
