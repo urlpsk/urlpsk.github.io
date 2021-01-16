@@ -1,3 +1,7 @@
-# GITALLER game pad viewer css
+## Contents
 
-https://gamepadviewer.com/?p=1&css=https%3A%2F%2Furlpsk.github.io%2Fgamepad_viewer%2Fcss%2Fgitaller.css
+[GITALLER game pad viewer CSS](gamepad_viewer) 
+
+## 連絡先
+
+Twitter [@K_YukiDaruma](https://twitter.com/K_YukiDaruma)
