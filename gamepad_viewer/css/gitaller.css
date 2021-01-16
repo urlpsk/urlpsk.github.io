@@ -2,13 +2,13 @@
   background-image: none;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  width: 480px;
+  width: 456px;
   height: 112px;
 }
 
 #gamepads .controller .abxy {
   position: absolute;
-  width: 480px;
+  width: 456px;
   height: 112px;
   top: 10px;
   left: 10px;
@@ -67,7 +67,7 @@
 
 #gamepads .controller .bumpers {
   position: absolute;
-  width: 480px;
+  width: 456px;
   height: 112px;
   top: 10px;
   left: 10px;
@@ -108,7 +108,7 @@
 
 #gamepads .controller .triggers {
   position: absolute;
-  width: 480px;
+  width: 456px;
   height: 112px;
   top: 10px;
   left: 10px;
@@ -145,7 +145,7 @@
 
 #gamepads .controller .sticks {
   position: absolute;
-  width: 480px;
+  width: 456px;
   height: 112px;
   top: 10px;
   left: 10px;
@@ -156,27 +156,31 @@
   background-image: none;
   background-repeat: no-repeat;
   opacity: 1;
-  height: 76px;
-  width: 54px;
-  left: 404px;
+  height: 42px;
+  width: 31px;
+  left: 400px;
 }
 
 #gamepads .controller .sticks .stick.left {
   top: -2px;
   display: block;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2337b823%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%201.85%2049.44%2025.86%2049.44%2048.85%2035.44%2034.85%2035.44%2069.86%2015.44%2069.86%2015.44%2034.85%201.52%2048.85%201.52%2025.86%2025.43%201.85%22%2F%3E%3C%2Fsvg%3E");
+  filter: grayscale(100%) brightness(80%);
 }
 
 #gamepads .controller .sticks .stick.left.pressed {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2337b823%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%201.85%2049.44%2025.86%2049.44%2048.85%2035.44%2034.85%2035.44%2069.86%2015.44%2069.86%2015.44%2034.85%201.52%2048.85%201.52%2025.86%2025.43%201.85%22%2F%3E%3C%2Fsvg%3E");
+  filter: none;
 }
 
 #gamepads .controller .sticks .stick.right {
   display: block;
-  top: 20px;
+  top: 50px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%234b8fff%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%2069.86%2049.44%2045.85%2049.44%2022.86%2035.44%2036.85%2035.44%201.85%2015.44%201.85%2015.44%2036.85%201.52%2022.86%201.52%2045.85%2025.43%2069.86%22%2F%3E%3C%2Fsvg%3E");
+  filter: grayscale(100%) brightness(80%);
 }
 
 #gamepads .controller .sticks .stick.right.pressed {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%234b8fff%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%2069.86%2049.44%2045.85%2049.44%2022.86%2035.44%2036.85%2035.44%201.85%2015.44%201.85%2015.44%2036.85%201.52%2022.86%201.52%2045.85%2025.43%2069.86%22%2F%3E%3C%2Fsvg%3E");
+  filter: none;
 }
 
 #gamepads .controller .arrows, #gamepads .controller .touchpad, #gamepads .controller .quadrant, #gamepads .controller .wheels, #gamepads .controller .dpad, #gamepads .controller .fstick {
