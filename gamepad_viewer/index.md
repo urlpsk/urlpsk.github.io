@@ -2,9 +2,9 @@
 
 ## これはなに？
 
-[GITALLER](https://www.dj-dao.com/jp/gitaller) の [Gamepad Viewer](https://gamepadviewer.com/) 用カスタムCSSです。
+[Gamepad Viewer](https://gamepadviewer.com/) の [GITALLER](https://www.dj-dao.com/jp/gitaller) 用カスタムスキンCSSです。
 
-[OBS Studio](https://obsproject.com/) による配信や録画にGITALLERの入力を追加できます。
+[OBS Studio](https://obsproject.com/) による配信・録画映像にGITALLERの入力表示を追加できます。
 
 ![見た目](../img/sample.png)
 
@@ -16,7 +16,7 @@ OBSの「ソース」の「ブラウザ」を追加し、プロパティのURL�
 
 幅と高さは小さすぎなければ問題ありません。作成者は幅500、高さは150に設定しています。
 
-遅延等を設定する場合は [https://gamepadviewer.com/#generate](https://gamepadviewer.com/#generate) の「Custom CSS URL」に [https://urlpsk.github.io/gamepad_viewer/css/gitaller.css](https://urlpsk.github.io/gamepad_viewer/css/gitaller.css)
+表示遅延等を設定する場合は [https://gamepadviewer.com/#generate](https://gamepadviewer.com/#generate) の「Custom CSS URL」に [https://urlpsk.github.io/gamepad_viewer/css/gitaller.css](https://urlpsk.github.io/gamepad_viewer/css/gitaller.css)
 を指定して生成されるURLを使用してください。
 
 ## 開発用リポジトリ
