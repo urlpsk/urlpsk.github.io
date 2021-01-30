@@ -6,7 +6,7 @@
 
 [OBS Studio](https://obsproject.com/) による配信・録画映像にGITALLERの入力表示を追加できます。
 
-![見た目](../img/sample.png)
+![見た目](img/sample.png)
 
 ## 使い方
 
