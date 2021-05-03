@@ -3,13 +3,13 @@
   background-color: #000000;
   border-radius: 10px;
   width: 456px;
-  height: 112px;
+  height: 48px;
 }
 
 #gamepads .controller .abxy {
   position: absolute;
   width: 456px;
-  height: 112px;
+  height: 48px;
   top: 10px;
   left: 10px;
 }
@@ -19,9 +19,9 @@
   background-image: none;
   top: 0;
   height: 24px;
-  width: 68px;
-  border: #ffffff 4px solid;
-  border-radius: 4px;
+  width: 72px;
+  border: #ffffff 2px solid;
+  border-radius: 2px;
   background-color: transparent;
 }
 
@@ -31,44 +31,44 @@
 
 #gamepads .controller .abxy .button.a {
   left: 0;
-  border-color: #ff8888;
+  border-color: #EA5352;
 }
 
 #gamepads .controller .abxy .button.a.pressed {
-  background-color: #ff8888;
+  background-color: #EA5352;
 }
 
 #gamepads .controller .abxy .button.b {
-  left: calc( ( 68px + 4px * 2 + 2px ) * 1);
-  border-color: #88ff88;
+  left: calc( ( 72px + 2px * 2 + 2px ) * 1);
+  border-color: #6ADE72;
 }
 
 #gamepads .controller .abxy .button.b.pressed {
-  background-color: #88ff88;
+  background-color: #6ADE72;
 }
 
 #gamepads .controller .abxy .button.x {
-  left: calc( ( 68px + 4px * 2 + 2px ) * 2);
-  border-color: #8888ff;
+  left: calc( ( 72px + 2px * 2 + 2px ) * 2);
+  border-color: #7CC2EF;
 }
 
 #gamepads .controller .abxy .button.x.pressed {
-  background-color: #8888ff;
+  background-color: #7CC2EF;
 }
 
 #gamepads .controller .abxy .button.y {
-  left: calc( ( 68px + 4px * 2 + 2px ) * 3);
-  border-color: #ffff88;
+  left: calc( ( 72px + 2px * 2 + 2px ) * 3);
+  border-color: #FCFA90;
 }
 
 #gamepads .controller .abxy .button.y.pressed {
-  background-color: #ffff88;
+  background-color: #FCFA90;
 }
 
 #gamepads .controller .bumpers {
   position: absolute;
   width: 456px;
-  height: 112px;
+  height: 48px;
   top: 10px;
   left: 10px;
 }
@@ -77,29 +77,29 @@
   position: absolute;
   background-image: none;
   opacity: 1;
-  border: #ffffff 4px solid;
-  border-radius: 4px;
+  border: #ffffff 2px solid;
+  border-radius: 2px;
   background-color: transparent;
 }
 
 #gamepads .controller .bumpers .bumper.left {
   top: 0;
   height: 24px;
-  width: 68px;
-  left: calc( ( 68px + 4px * 2 + 2px ) * 4);
-  border-color: #ff88ff;
+  width: 72px;
+  left: calc( ( 72px + 2px * 2 + 2px ) * 4);
+  border-color: #EF8EE7;
 }
 
 #gamepads .controller .bumpers .bumper.left.pressed {
-  background-color: #ff88ff;
+  background-color: #EF8EE7;
 }
 
 #gamepads .controller .bumpers .bumper.right {
   opacity: 1;
-  left: 0;
-  top: 42px;
-  height: 20px;
-  width: 380px;
+  left: 392px;
+  top: 0;
+  height: 11px;
+  width: 40px;
 }
 
 #gamepads .controller .bumpers .bumper.right.pressed {
@@ -109,7 +109,7 @@
 #gamepads .controller .triggers {
   position: absolute;
   width: 456px;
-  height: 112px;
+  height: 48px;
   top: 10px;
   left: 10px;
 }
@@ -122,17 +122,17 @@
   position: absolute;
   background-image: none;
   opacity: 1;
-  height: 20px;
-  width: 380px;
-  border: #ffffff 4px solid;
-  border-radius: 0 0 4px 4px;
+  height: 11px;
+  width: 40px;
+  border: #ffffff 2px solid;
+  border-radius: 0 0 2px 2px;
   background-color: transparent;
 }
 
 #gamepads .controller .triggers .trigger-button.left {
   opacity: 1;
-  top: 66px;
-  left: 0;
+  left: 392px;
+  top: 13px;
 }
 
 #gamepads .controller .triggers .trigger-button.left.pressed {
@@ -144,43 +144,7 @@
 }
 
 #gamepads .controller .sticks {
-  position: absolute;
-  width: 456px;
-  height: 112px;
-  top: 10px;
-  left: 10px;
-}
-
-#gamepads .controller .sticks .stick {
-  position: absolute;
-  background-image: none;
-  background-repeat: no-repeat;
-  opacity: 1;
-  height: 42px;
-  width: 31px;
-  left: 400px;
-}
-
-#gamepads .controller .sticks .stick.left {
-  top: -2px;
-  display: block;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%2337b823%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%201.85%2049.44%2025.86%2049.44%2048.85%2035.44%2034.85%2035.44%2069.86%2015.44%2069.86%2015.44%2034.85%201.52%2048.85%201.52%2025.86%2025.43%201.85%22%2F%3E%3C%2Fsvg%3E");
-  filter: grayscale(100%) brightness(80%);
-}
-
-#gamepads .controller .sticks .stick.left.pressed {
-  filter: none;
-}
-
-#gamepads .controller .sticks .stick.right {
-  display: block;
-  top: 50px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22w%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2051%2071%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%234b8fff%3Bstroke%3A%23f2f2f2%3Bstroke-miterlimit%3A10%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpolygon%20class%3D%22cls-1%22%20points%3D%2225.43%2069.86%2049.44%2045.85%2049.44%2022.86%2035.44%2036.85%2035.44%201.85%2015.44%201.85%2015.44%2036.85%201.52%2022.86%201.52%2045.85%2025.43%2069.86%22%2F%3E%3C%2Fsvg%3E");
-  filter: grayscale(100%) brightness(80%);
-}
-
-#gamepads .controller .sticks .stick.right.pressed {
-  filter: none;
+  display: none;
 }
 
 #gamepads .controller .arrows, #gamepads .controller .touchpad, #gamepads .controller .quadrant, #gamepads .controller .wheels, #gamepads .controller .dpad, #gamepads .controller .fstick {
