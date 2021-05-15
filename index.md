@@ -1,6 +1,6 @@
 ## Contents
 
-[GITALLER game pad viewer CSS](gamepad_viewer) 
+[GITALLER Gamepad Viewer CSS](gamepad_viewer) 
 
 ## 連絡先
 
