@@ -1,6 +1,8 @@
 ## Contents
 
-[GITALLER Gamepad Viewer CSS](gamepad_viewer) 
+[GITALLER Gamepad Viewer CSS](gamepad_viewer)
+
+[ギタコン譜面ログ](guitar_controller_log_viewer)
 
 ## 連絡先
 

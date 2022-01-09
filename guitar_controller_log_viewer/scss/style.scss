@@ -1,0 +1,226 @@
+$red: #EA5352;
+$green: #6ADE72;
+$blue: #7CC2EF;
+$yellow: #FCFA90;
+$purple: #EF8EE7;
+$open: #8c71ad;
+
+$note-width: 35px;
+$note-height: 6px;
+$lane-width: 39px;
+$beam-width: 2px;
+$pick-height: 1px;
+
+$title-color: #84b6aa;
+
+body {
+  margin: 0;
+  background-color: #222;
+  color: white;
+  font-family: "BIZ UDゴシック", ui-monospace;
+}
+
+#app {
+  display: flex;
+}
+
+.log {
+  background-color: #000000FC;
+  padding: 0 40px 0 10px;
+  margin: 0;
+
+  li {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+
+    &.up, &.down {
+      &:before {
+        position: absolute;
+        width: $lane-width * 5;
+        height: $pick-height;
+        top: 50%;
+        left: 0;
+        background-color: #88888888;
+        margin-top: - $pick-height / 2;
+        content: '';
+      }
+
+      .lane:after {
+        content: '';
+        position: absolute;
+        width: $note-width;
+        height: $note-height;
+        top: 50%;
+        margin-top: - $note-height / 2;
+        border: none;
+      }
+    }
+
+    &.down {
+      &:before {
+        background-color: #A0A0A080;
+      }
+    }
+
+    &.up {
+      &:before {
+        background-color: #40404080;
+      }
+    }
+
+    &.down {
+      &:after {
+        content: url('../img/arrow_down.svg');
+        position: absolute;
+        top: 50%;
+        right: -28px;
+        width: 15px;
+        margin-top: -7.5px;
+      }
+    }
+
+    &.up {
+      &:after {
+        content: url('../img/arrow_up.svg');
+        position: absolute;
+        top: 50%;
+        right: -28px;
+        width: 15px;
+        margin-top: -7.5px;
+      }
+    }
+
+    .lane {
+      position: relative;
+      width: $lane-width;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: $beam-width;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        margin-left: - $beam-width / 2;
+        filter: brightness(40%);
+      }
+
+      &.red, &.green, &.blue, &.yellow, &.purple {
+        &:after {
+          border: black 1px solid;
+          margin-left: 1px;
+        }
+      }
+
+      &.red {
+        &:before, &:after {
+          background-color: $red;
+        }
+      }
+
+      &.green {
+        &:before, &:after {
+          background-color: $green;
+        }
+      }
+
+      &.blue {
+        &:before, &:after {
+          background-color: $blue;
+        }
+      }
+
+      &.yellow {
+        &:before, &:after {
+          background-color: $yellow;
+        }
+      }
+
+      &.purple {
+        &:before, &:after {
+          background-color: $purple;
+        }
+      }
+
+      &.open {
+        &:after {
+          background-color: $open;
+          width: $lane-width;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  margin-left: 1rem;
+}
+
+.form, .instruction {
+  background-color: #000000;
+  padding: 0 1rem 1rem;
+
+  p {
+    margin: 10px 0;
+  }
+
+  button {
+    margin-right: 5px;
+  }
+
+  .input-buttons {
+    display: flex;
+
+    p {
+      margin: 0 30px 0 0;
+    }
+  }
+
+  li {
+    padding: 8px 0 0;
+  }
+
+  ol > li {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+  }
+
+  hr {
+    border-color: #222;
+  }
+
+  textarea:read-only {
+    background-color: #DDD;
+  }
+}
+
+.instruction {
+  label {
+    text-decoration: underline dashed;
+  }
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+h2, h3, h4, .title-text {
+  color: $title-color;
+}
+
+a {
+  color: #ffd2fb;
+
+  &:visited {
+    color: #ffb0f8;
+  }
+}
