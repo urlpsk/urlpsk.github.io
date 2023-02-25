@@ -15,11 +15,13 @@ body {
   padding: 0 40px 0 10px;
   margin: 0;
 }
+
 .log li {
   display: flex;
   list-style-type: none;
   position: relative;
 }
+
 .log li.up:before, .log li.down:before {
   position: absolute;
   width: 195px;
@@ -28,10 +30,11 @@ body {
   left: 0;
   background-color: #88888888;
   margin-top: -0.5px;
-  content: "";
+  content: '';
 }
+
 .log li.up .lane:after, .log li.down .lane:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 35px;
   height: 6px;
@@ -39,12 +42,15 @@ body {
   margin-top: -3px;
   border: none;
 }
+
 .log li.down:before {
   background-color: #A0A0A080;
 }
+
 .log li.up:before {
   background-color: transparent;
 }
+
 .log li.down:after {
   content: url("../img/arrow_down.svg");
   position: absolute;
@@ -53,6 +59,7 @@ body {
   width: 15px;
   margin-top: -7.5px;
 }
+
 .log li.up:after {
   content: url("../img/arrow_up.svg");
   position: absolute;
@@ -61,12 +68,14 @@ body {
   width: 15px;
   margin-top: -7.5px;
 }
+
 .log li .lane {
   position: relative;
   width: 39px;
 }
+
 .log li .lane:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 7px;
   height: 100%;
@@ -74,64 +83,81 @@ body {
   left: 50%;
   margin-left: -3.5px;
 }
+
 .log li .lane.red:after, .log li .lane.green:after, .log li .lane.blue:after, .log li .lane.yellow:after, .log li .lane.purple:after {
   border: black 1px solid;
   margin-left: 1px;
 }
+
 .log li .lane.red:before {
   background: linear-gradient(to right, #250007, 45%, #805761, 55%, #250007);
 }
+
 .log li .lane.red:after {
   background: radial-gradient(#FFC3B8, #E12F3B, #A42833);
 }
+
 .log li .lane.green:before {
   background: linear-gradient(to right, #08250B, 45%, #4D684D, 55%, #08250B);
 }
+
 .log li .lane.green:after {
   background: radial-gradient(#B5FBBD, #4CD24E, #35933F);
 }
+
 .log li .lane.blue:before {
   background: linear-gradient(to right, #041A21, 45%, #475A5E, 55%, #041A21);
 }
+
 .log li .lane.blue:after {
   background: radial-gradient(#D6FFFF, #71BFF1, #315E85);
 }
+
 .log li .lane.yellow:before {
   background: linear-gradient(to right, #181408, 45%, #706857, 55%, #181408);
 }
+
 .log li .lane.yellow:after {
   background: radial-gradient(#FFFA8F, #F9DA79, #94712A);
 }
+
 .log li .lane.purple:before {
   background: linear-gradient(to right, #2A021F, 45%, #66475F, 55%, #2A021F);
 }
+
 .log li .lane.purple:after {
   background: radial-gradient(#FF80F9, #EF69DD, #7A0465);
 }
+
 .log li.down .lane:nth-child(1).open:after, .log li.up .lane:nth-child(1).open:after {
   background: linear-gradient(to right, #9D2982, #EF4CEA);
   width: 39px;
 }
+
 .log li.down .lane:nth-child(2).open:after, .log li.up .lane:nth-child(2).open:after {
   background: linear-gradient(to right, #EF4CEA, #E3B3E6);
   width: 39px;
 }
+
 .log li.down .lane:nth-child(3).open:after, .log li.up .lane:nth-child(3).open:after {
   background-color: #E3B3E6;
   width: 39px;
 }
+
 .log li.down .lane:nth-child(3).open:before, .log li.up .lane:nth-child(3).open:before {
   position: absolute;
-  top: calc(50% - 12px);
+  top: calc( 50% - 11px);
   left: -3px;
   width: 54px;
   content: url("../img/open.svg");
   z-index: 1;
 }
+
 .log li.down .lane:nth-child(4).open:after, .log li.up .lane:nth-child(4).open:after {
   background: linear-gradient(to right, #E3B3E6, #EF4CEA);
   width: 39px;
 }
+
 .log li.down .lane:nth-child(5).open:after, .log li.up .lane:nth-child(5).open:after {
   background: linear-gradient(to right, #EF4CEA, #9D2982);
   width: 39px;
@@ -145,33 +171,42 @@ body {
   background-color: #000000;
   padding: 0 1rem 1rem;
 }
+
 .form p, .instruction p {
   margin: 10px 0;
   line-height: 1.25em;
 }
+
 .form button, .instruction button {
   margin-right: 5px;
 }
+
 .form .input-buttons, .instruction .input-buttons {
   display: flex;
 }
+
 .form .input-buttons p, .instruction .input-buttons p {
   margin: 0 30px 0 0;
 }
+
 .form li, .instruction li {
   padding: 8px 0 0;
   line-height: 1.1em;
 }
+
 .form ol > li, .instruction ol > li {
   margin-bottom: 1rem;
 }
+
 .form ul, .instruction ul {
   padding-left: 1rem;
   list-style-type: disc;
 }
+
 .form hr, .instruction hr {
   border-color: #222;
 }
+
 .form textarea:read-only, .instruction textarea:read-only {
   background-color: #DDD;
 }
@@ -196,8 +231,7 @@ h2, h3, h4, .title-text {
 a {
   color: #ffd2fb;
 }
+
 a:visited {
   color: #ffb0f8;
 }
-
-/*# sourceMappingURL=style.css.map */
